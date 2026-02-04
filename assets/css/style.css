@@ -4,13 +4,18 @@
     font-weight: 400;
 }
 
-/*@keyframes pulse-carte {
-    100%{transform: scale(1.1);}
-}*/
+* {
+    box-sizing: border-box;
+}
 
 :root{
     --couleur-principal :#7e74af;
     --couleur-text: #070043;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
 }
 
 body{
@@ -73,6 +78,17 @@ h1 {
     text-align: justify;
 }
 
+.image-container {
+    width: 50vh;
+    height: 38vh;
+}
+
+.contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 img {
     border-radius: 20px;
 }
@@ -93,6 +109,7 @@ h2 {
     text-align: center;
     background: rgb(179, 179, 247);
     padding: 10px;
+    margin: 10px;
     width: 150px;
 }
 
@@ -116,14 +133,15 @@ h2 {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    text-align: right;
+
     background: var(--couleur-principal);
     color: var(--couleur-text);
     padding: 10px;
 }
 
-footer p {
+div.bas-page{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
     padding: 10px;
 }
