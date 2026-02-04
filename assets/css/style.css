@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Kanit";
+    src: url("../font/Kanit/Kanit-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+/*@keyframes pulse-carte {
+    100%{transform: scale(1.1);}
+}*/
+
+:root{
+    --couleur-principal :#7e74af;
+    --couleur-text: #070043;
+}
+
+body{
+    font-family: "Kanit";
+    background: #e4e1ff
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 50px 25px;
+    margin-bottom: 30px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    background: var(--couleur-principal);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+a.nav {
+    color: var(--couleur-text);
+    text-decoration: none;
+}
+
+a.nav:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+main {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#presentation {
+    padding-top: 20px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.text-presentation {
+    text-align: justify;
+}
+
+img {
+    border-radius: 20px;
+}
+
+h2 {
+    color: #1b0f4b;
+    text-align: center;
+}
+
+.ensemble-cartes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carte {
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(179, 179, 247);
+    padding: 10px;
+    width: 150px;
+}
+
+.carte:hover{
+    transition: transform 0.5s linear;
+    transform: scale(1.2);
+}
+
+#frise {
+    display: flex;
+    flex-direction: column;
+}
+
+.frise {
+    border-left: 2px solid blue;
+    padding-left: 10px;
+}
+
+.citation {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    background: var(--couleur-principal);
+    color: var(--couleur-text);
+    padding: 10px;
+}
+
+footer p {
+    padding: 10px;
+}
