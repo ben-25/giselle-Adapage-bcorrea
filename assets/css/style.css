@@ -5,6 +5,8 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -19,6 +21,8 @@ html {
 }
 
 body{
+    padding-top: 30px;
+    width: 100%;
     font-family: "Kanit";
     background: #e4e1ff
 }
@@ -26,8 +30,12 @@ body{
 section {
     background: white;
     border-radius: 10px;
-    padding: 50px 25px;
+    padding: 60px 30px;
     margin-bottom: 30px;
+}
+
+.titre {
+    padding: 20px;
 }
 
 nav {
@@ -94,6 +102,7 @@ img {
 }
 
 h2 {
+    font-size: 35px;
     color: #1b0f4b;
     text-align: center;
 }
