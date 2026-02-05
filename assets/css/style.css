@@ -11,8 +11,13 @@
 }
 
 :root{
-    --couleur-principal :#7e74af;
-    --couleur-text: #070043;
+    --couleur-fond: white;
+    --couleur-text-head: #070043;
+    --couleur-head-foot :#7e74af;
+    --couleur-section: #e4e1ff;
+    --couleur-cartes: rgb(179, 179, 247);
+    --couleur-frise: blue;
+    --couleur-h2: #1b0f4b;
 }
 
 html {
@@ -24,39 +29,38 @@ body{
     padding-top: 30px;
     width: 100%;
     font-family: "Kanit";
-    background: #e4e1ff
+    background: var(--couleur-section)
 }
 
 section {
-    background: white;
+    background: var(--couleur-fond);
     border-radius: 10px;
-    padding: 60px 30px;
+    padding: 60px;
     margin-bottom: 30px;
 }
 
 .titre {
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
 }
 
-nav {
+header > nav {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-around;
-    background: var(--couleur-principal);
-    text-decoration: none;
+    background: var(--couleur-head-foot);
     padding: 10px;
     font-size: 25px;
 }
 
-a.nav {
-    color: var(--couleur-text);
+header a.nav {
+    color: var(--couleur-text-head);
     text-decoration: none;
 }
 
-a.nav:hover{
+header a.nav:hover{
     transition: transform 0.3s ease;
     transform: scale(1.1);
 }
@@ -67,31 +71,34 @@ main {
     padding-right: 100px;
 }
 
-h1 {
-    font-size: 50px;
-}
 
 #presentation {
     padding-top: 20px;
 }
 
-.intro {
+#presentation > h1 {
+    font-size: 50px;
+}
+
+#presentation > div.intro {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.text-presentation {
+p.text-presentation {
     text-align: justify;
 }
 
-.image-container {
+div.intro > figure.image-container {
     width: 50vh;
     height: 38vh;
+    margin-top: 50px;
+    text-align: center;
 }
 
-.contain {
+img.contain {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -103,20 +110,23 @@ img {
 
 h2 {
     font-size: 35px;
-    color: #1b0f4b;
+    color: var(--couleur-h2);
     text-align: center;
 }
 
-.ensemble-cartes {
+#cartes > div.ensemble-cartes {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.carte {
+div.carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border-radius: 10px;
     text-align: center;
-    background: rgb(179, 179, 247);
+    background: var(--couleur-cartes);
     padding: 10px;
     margin: 10px;
     width: 150px;
@@ -132,25 +142,28 @@ h2 {
     flex-direction: column;
 }
 
-.frise {
-    border-left: 2px solid blue;
+div.frise {
+    border-left: 2px solid var(--couleur-frise);
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
-.citation {
+p.citation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
 footer {
 
-    background: var(--couleur-principal);
-    color: var(--couleur-text);
+    background: var(--couleur-head-foot);
+    color: var(--couleur-text-head);
     padding: 10px;
 }
 
 div.bas-page{
     display: flex;
     justify-content: space-between;
-    text-align: right;
     padding: 10px;
 }
