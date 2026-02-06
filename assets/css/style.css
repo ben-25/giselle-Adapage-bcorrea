@@ -58,10 +58,13 @@ header > nav {
 header a.nav {
     color: var(--couleur-text-head);
     text-decoration: none;
+    padding: 4px;
+    border-radius: 5px;
 }
 
 header a.nav:hover{
     transition: transform 0.3s ease;
+    background: #9084e6;
     transform: scale(1.1);
 }
 
